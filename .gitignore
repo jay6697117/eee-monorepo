@@ -10,8 +10,14 @@ out
 .vitepress/dist
 .vitepress/cache
 
+.turbo
 **/.turbo
-**/.turbo/**/*.log
+**/apps/**/.turbo
+**/packages/**/.turbo
+**/.turbo/**
+.turbo/**
+*.turbo.json
+**/*.turbo.json
 
 .cache
 .temp
