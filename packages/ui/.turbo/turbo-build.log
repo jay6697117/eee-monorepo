@@ -8,9 +8,9 @@
 [36m[vite:dts][32m Start generate declaration files...[39m
 [2K[1Gcomputing gzip size (0)...[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[35mui.css    [39m[1m[2m5.62 kB[22m[1m[22m[2m │ gzip: 1.64 kB[22m
 [2mdist/[22m[36mui.es.js  [39m[1m[2m0.82 kB[22m[1m[22m[2m │ gzip: 0.47 kB[22m
-[32m[36m[vite:dts][32m Declaration files built in 925ms.
+[32m[36m[vite:dts][32m Declaration files built in 628ms.
 [39m
 [2K[1GEntry module "src/index.ts" is using named and default exports together. Consumers of your bundle will have to use `EeeUI.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
 [2K[1Grendering chunks (1)...[2K[1G[2K[1Gcomputing gzip size (1)...[2K[1Gcomputing gzip size (2)...[2K[1G[2mdist/[22m[35mui.css     [39m[1m[2m5.62 kB[22m[1m[22m[2m │ gzip: 1.64 kB[22m
 [2mdist/[22m[36mui.umd.js  [39m[1m[2m0.87 kB[22m[1m[22m[2m │ gzip: 0.55 kB[22m
-[32m✓ built in 1.34s[39m
+[32m✓ built in 949ms[39m

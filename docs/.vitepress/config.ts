@@ -29,7 +29,7 @@ export default defineConfig({
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-repo/eee-ui' }
+      { icon: 'github', link: 'https://github.com/jay6697117/eee-monorepo' }
     ]
   }
 })
