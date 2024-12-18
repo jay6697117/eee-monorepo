@@ -1,0 +1,30 @@
+{
+  "name": "eee-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "docs"
+  ],
+  "scripts": {
+    "start:web": "pnpm run clean && pnpm i && pnpm run build && pnpm run web:dev",
+    "start:docs": "pnpm run clean && pnpm i && pnpm run build && pnpm run docs:dev",
+    "web:dev": "turbo run dev --filter=web",
+    "docs:dev": "turbo run dev --filter=docs",
+    "build": "turbo run build",
+    "clean": "turbo run clean && find . -name 'node_modules' -type d -prune -exec rm -rf {} +",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,vue}\""
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "prettier": "^3.1.0",
+    "turbo": "^1.10.16"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.9.0"
+}
