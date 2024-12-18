@@ -10,7 +10,9 @@ out
 .vitepress/dist
 .vitepress/cache
 
-.turbo
+**/.turbo
+**/.turbo/**/*.log
+
 .cache
 .temp
 .DS_Store
