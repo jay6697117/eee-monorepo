@@ -6,6 +6,17 @@
       </h1>
 
       <div class="space-y-8">
+        <!-- Toast 示例 -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">Toast 提示</h2>
+          <div class="space-x-4">
+            <zjh-button variant="primary" @click="showSuccessToast">成功提示</zjh-button>
+            <zjh-button variant="secondary" @click="showErrorToast">错误提示</zjh-button>
+            <zjh-button variant="primary" @click="showInfoToast">信息提示</zjh-button>
+            <zjh-button variant="secondary" @click="showWarningToast">警告提示</zjh-button>
+          </div>
+        </div>
+
         <!-- 按钮示例 -->
         <div class="bg-white p-6 rounded-lg shadow">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">按钮组件</h2>
@@ -31,7 +42,24 @@
 </template>
 
 <script setup lang="ts">
-// 组件已全局注册，无需导入
+import { toast } from '@eee/utils';
+
+// Toast 示例函数
+const showSuccessToast = () => {
+  toast('操作成功！', { type: 'success' });
+};
+
+const showErrorToast = () => {
+  toast('操作失败！', { type: 'error' });
+};
+
+const showInfoToast = () => {
+  toast('这是一条信息提示', { type: 'info' });
+};
+
+const showWarningToast = () => {
+  toast('注意：这是一条警告信息', { type: 'warning' });
+};
 </script>
 
 <style scoped>
